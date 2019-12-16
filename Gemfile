@@ -67,4 +67,7 @@ gem 'slim-rails'
 
 gem 'bootstrap'
 
-gem 'rubocop', require: false
+#gem 'rubocop', require: false
+
+# Use ActiveModel has_secure_password
+gem 'bcrypt', '~>3.1.7'
