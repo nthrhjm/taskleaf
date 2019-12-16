@@ -71,3 +71,7 @@ gem 'bootstrap'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~>3.1.7'
+
+# デバッグ
+#gem 'pry-rails'
+gem 'pry-byebug'
