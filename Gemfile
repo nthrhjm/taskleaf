@@ -75,3 +75,6 @@ gem 'bcrypt', '~>3.1.7'
 # デバッグ
 #gem 'pry-rails'
 gem 'pry-byebug'
+
+# 文字列の中のリンクをいい感じに
+gem 'rails_autolink'
