@@ -49,9 +49,12 @@ describe 'タスク管理機能', type: :system do
     let(:login_user) { user_a }
 
     before do
+      # 新規作成画面で
       visit new_task_path
       fill_in '名前', with: task_name
-      click_button '登録する'
+      click_button '確認'
+      # 確認画面で登録ボタンを押す
+      click_button '登録'
     end
 
     context '新規作成画面で名称を入力したとき' do
