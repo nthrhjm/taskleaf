@@ -81,3 +81,9 @@ gem 'pry-byebug'
 
 # 文字列の中のリンクをいい感じに
 gem 'rails_autolink'
+
+#検索機能
+ gem 'ransack'
+
+#pagination
+gem 'kaminari'

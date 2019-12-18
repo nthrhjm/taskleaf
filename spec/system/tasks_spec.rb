@@ -51,10 +51,10 @@ describe 'タスク管理機能', type: :system do
     before do
       # 新規作成画面で
       visit new_task_path
-      fill_in '名前', with: task_name
-      click_button '確認'
+      fill_in '名称', with: task_name
+      click_button '登録する'
       # 確認画面で登録ボタンを押す
-      click_button '登録'
+      #click_button '登録'
     end
 
     context '新規作成画面で名称を入力したとき' do
@@ -70,7 +70,7 @@ describe 'タスク管理機能', type: :system do
 
       it 'エラーとなる' do
         within '#error_explanation' do # id="error_explanation"の中で...
-          expect(page).to have_content '名前を入力してください'
+          expect(page).to have_content '名称を入力してください'
         end
       end
     end
